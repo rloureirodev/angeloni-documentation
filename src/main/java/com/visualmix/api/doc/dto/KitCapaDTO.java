@@ -1,6 +1,7 @@
 package com.visualmix.api.doc.dto;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -23,5 +24,11 @@ public class KitCapaDTO {
 
 	@ApiModelProperty(value = " ", example = " ")
 	private LocalDateTime dataAlteracao;
+	
+	@ApiModelProperty(value = " ", example = " ")
+	private List<KitItensDTO> kitItens ;
+	
+	@ApiModelProperty(value = " ", example = " ")
+	private List<KitLojasDTO> kitLojas ;
 
 }
