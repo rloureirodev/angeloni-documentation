@@ -10,7 +10,7 @@ import lombok.Data;
 @ApiModel(description = "Informações do usuário")
 @Data
 @Builder
-public class CasadinhaDTO {
+public class PackVirtualDTO {
 	
 	@ApiModelProperty(value = " ", example = " ")
 	private Integer codigo;

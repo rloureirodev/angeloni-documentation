@@ -70,8 +70,10 @@ public class ImpostoLojasDTO {
 	private int motDescIcms;
 	
 	@ApiModelProperty(value = " ", example = " ")
-	private double adremicmsret;
+	private double adremicmsret;	
 
+	@ApiModelProperty(value = " ", example = " ")
+	private String codIntegracao;
 
 
 }

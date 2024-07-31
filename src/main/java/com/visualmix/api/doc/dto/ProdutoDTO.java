@@ -1,5 +1,7 @@
 package com.visualmix.api.doc.dto;
 
+import java.util.List;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Builder;
@@ -151,6 +153,16 @@ public class ProdutoDTO {
 	private double pesoEspecifico;
 
 	@ApiModelProperty(value = " ", example = " ")
-	private Integer tipoVasilhame;	
+	private Integer tipoVasilhame;
+	
+	@ApiModelProperty(value = " ", example = " ")
+	private List<EmbalagemDTO> embalagens ;
+	
+	@ApiModelProperty(value = " ", example = " ")
+	private List<ProdutoNutricionalDTO> produtoNutricional ;
+	
+	@ApiModelProperty(value = " ", example = " ")
+	private List<AutomacaoDTO> promocaoRelampago ;
+	
 
 }

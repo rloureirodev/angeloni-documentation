@@ -2,6 +2,7 @@ package com.visualmix.api.doc.dto;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -88,9 +89,10 @@ public class EmbalagemLojaDTO {
 	@ApiModelProperty(value = " ", example = " ")
 	private String descricaoAux;	
 	
+	@ApiModelProperty(value = " ", example = " ")
+	private List<EmbalagemAtacadoDTO> embalagemAtacado ;
 	
-	// Verificar onde fica isso
-//	@ApiModelProperty(value = " ", example = " ")
-//	private String codIntegracao;
+	@ApiModelProperty(value = " ", example = " ")
+	private List<PromocaoRelampagoDTO> promocaoRelampago ;
 
 }
