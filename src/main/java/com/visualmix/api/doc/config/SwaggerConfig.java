@@ -29,9 +29,9 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfo(
-                "Título da API",
-                "Descrição da API",
-                "Versão",
+                "Angeloni => VisualMix",
+                "EndPoints a serem fornecidos pela equipe Angeloni",
+                "1.0.0",
                 "Termos de Serviço",
                 new Contact("Nome", "URL", "email"),
                 "Licença",
