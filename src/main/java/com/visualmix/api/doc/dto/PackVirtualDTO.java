@@ -1,6 +1,7 @@
 package com.visualmix.api.doc.dto;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -53,6 +54,12 @@ public class PackVirtualDTO {
 
 	@ApiModelProperty(value = " ", example = " ")
 	private int tipoPreco;
+	
+	@ApiModelProperty(value = " ", example = " ")
+	private List<PackVirtualProdutosDTO> packVirtualProdutos ;
+	
+	@ApiModelProperty(value = " ", example = " ")
+	private List<PackVirtualLojasDTO> packVirtualLojas ;
 
 
 }

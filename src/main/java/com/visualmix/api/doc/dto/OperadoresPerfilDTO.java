@@ -1,5 +1,7 @@
 package com.visualmix.api.doc.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Builder;
@@ -11,6 +13,7 @@ import lombok.Data;
 public class OperadoresPerfilDTO {	
 	
 	@ApiModelProperty(value = " ", example = " ")
+	@JsonIgnore
 	private Integer operador;
 
 	@ApiModelProperty(value = " ", example = " ")

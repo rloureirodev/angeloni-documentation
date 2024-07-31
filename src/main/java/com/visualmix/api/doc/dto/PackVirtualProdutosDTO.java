@@ -1,6 +1,8 @@
 package com.visualmix.api.doc.dto;
 import java.time.LocalDateTime;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Builder;
@@ -12,6 +14,7 @@ import lombok.Data;
 public class PackVirtualProdutosDTO {
 	
 	@ApiModelProperty(value = " ", example = " ")
+	@JsonIgnore
 	private Integer codigoCasadinha;
 
 	@ApiModelProperty(value = " ", example = " ")

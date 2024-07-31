@@ -1,5 +1,7 @@
 package com.visualmix.api.doc.dto;
 
+import java.util.List;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Builder;
@@ -52,5 +54,9 @@ public class OperadoresDTO {
 	@ApiModelProperty(value = " ", example = " ")
 	private Float cpf;
 
-
+	@ApiModelProperty(value = " ", example = " ")
+	private List<OperadoresLojasDTO> embalagens ;
+	
+	@ApiModelProperty(value = " ", example = " ")
+	private List<OperadoresPerfilDTO> produtoNutricional ;
 }

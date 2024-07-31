@@ -1,5 +1,7 @@
 package com.visualmix.api.doc.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Builder;
@@ -11,6 +13,7 @@ import lombok.Data;
 public class  ProdutoNutricionalDTO {
 	
 	@ApiModelProperty(value = " ", example = " ")
+	@JsonIgnore
 	private int produtoId;
 
 	@ApiModelProperty(value = " ", example = " ")

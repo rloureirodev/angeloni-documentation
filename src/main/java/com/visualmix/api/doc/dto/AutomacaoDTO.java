@@ -1,5 +1,7 @@
 package com.visualmix.api.doc.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Builder;
@@ -10,13 +12,14 @@ import lombok.Data;
 @Builder
 public class AutomacaoDTO {
 	
-	@ApiModelProperty(value = " ", example = " ")
+	@ApiModelProperty(value = " ", example = " ")	
 	private int codigoAutomacao;
 
 	@ApiModelProperty(value = " ", example = " ")
 	private int digitoAutomacao;
 
 	@ApiModelProperty(value = " ", example = " ")
+	@JsonIgnore
 	private int produtoId;
 
 	@ApiModelProperty(value = " ", example = " ")
