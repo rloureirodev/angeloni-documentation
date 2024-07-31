@@ -55,8 +55,8 @@ public class OperadoresDTO {
 	private Float cpf;
 
 	@ApiModelProperty(value = " ", example = " ")
-	private List<OperadoresLojasDTO> embalagens ;
+	private List<OperadoresLojasDTO> operadoresLoja ;
 	
 	@ApiModelProperty(value = " ", example = " ")
-	private List<OperadoresPerfilDTO> produtoNutricional ;
+	private List<OperadoresPerfilDTO> operadoresPerfil ;
 }
