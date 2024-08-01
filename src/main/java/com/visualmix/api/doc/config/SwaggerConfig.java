@@ -29,7 +29,7 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfo(
-                "ERP => Visual Mix",
+                "ERP » Visual Mix (Api)",
                 "EndPoints a serem fornecidos pelo ERP",
                 "1.0.0",
                 "Termos de Serviço",

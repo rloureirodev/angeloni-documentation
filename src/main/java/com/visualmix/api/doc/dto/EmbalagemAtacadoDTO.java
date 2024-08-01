@@ -112,11 +112,11 @@ public class EmbalagemAtacadoDTO {
 	private double valor05;
 
 	@ApiModelProperty(value = "Data Início:\r\n"
-			+ "Data de início da promoção ", example = "1980-01-01 00:00:00.000 ")
+			+ "Data de início da promoção ", example = "dd/MM/yyyy HH:mm:ss")
 	private LocalDateTime dtInicio;
 
 	@ApiModelProperty(value = "Data Fim:\r\n"
-			+ "Data de fim da promoção ", example = "1980-01-01 00:00:00.000 ")
+			+ "Data de fim da promoção ", example = "dd/MM/yyyy HH:mm:ss")
 	private LocalDateTime dtFim;
 
 	@ApiModelProperty(value = "Tipo de Venda:\r\n"
