@@ -10,13 +10,13 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import springfox.documentation.annotations.ApiIgnore;
 
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-//@ApiModel(description = "Informações da Paginacao" , value="Paginacao")
-@Schema(hidden = true)
+@ApiModel(description = "Informações da Paginacao" , value="Paginacao")
 public class PaginacaoDTO<T> {
 	
 	

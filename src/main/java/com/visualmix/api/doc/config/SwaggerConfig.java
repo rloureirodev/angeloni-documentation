@@ -4,10 +4,12 @@ import java.util.Collections;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import com.fasterxml.classmate.TypeResolver;
 import com.visualmix.api.doc.dto.PaginacaoDTO;
 
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.schema.AlternateTypeRules;
 import springfox.documentation.service.ApiInfo;
 import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
@@ -25,9 +27,10 @@ public class SwaggerConfig {
                 .build()
                 .pathMapping("/")
                 .useDefaultResponseMessages(false)
-                .ignoredParameterTypes(Object.class)
+                .ignoredParameterTypes(Object.class)           
                 .apiInfo(apiInfo())
                 .enable(true);
+        
     }
 
     private ApiInfo apiInfo() {
