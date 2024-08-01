@@ -25,7 +25,7 @@ public class SwaggerConfig {
                 .build()
                 .pathMapping("/")
                 .useDefaultResponseMessages(false)
-                .ignoredParameterTypes(Object.class,PaginacaoDTO.class)
+                .ignoredParameterTypes(Object.class)
                 .apiInfo(apiInfo())
                 .enable(true);
     }
