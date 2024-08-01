@@ -25,7 +25,7 @@ import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
-@Api(tags = "NfceClientes", description = "Consulta de NfceClientes.")
+@Api(tags = "Clientes", description = "Consulta de NfceClientes.")
 @RequestMapping("/cadastro")
 @RestController
 public class NfceClientesController {

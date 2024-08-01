@@ -7,7 +7,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Builder;
 import lombok.Data;
 
-@ApiModel(description = "Informações do usuário")
+@ApiModel(description = "Informações do Produto", value="Produto")
 @Data
 @Builder
 public class ProdutoDTO {

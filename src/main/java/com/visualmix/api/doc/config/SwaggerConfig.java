@@ -29,8 +29,8 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfo(
-                "Angeloni => VisualMix",
-                "EndPoints a serem fornecidos pela equipe Angeloni",
+                "ERP => Visual Mix",
+                "EndPoints a serem fornecidos pelo ERP",
                 "1.0.0",
                 "Termos de Serviço",
                 new Contact("Nome", "URL", "email"),
