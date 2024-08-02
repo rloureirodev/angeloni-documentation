@@ -17,6 +17,7 @@ import springfox.documentation.annotations.ApiIgnore;
 @AllArgsConstructor
 @NoArgsConstructor
 @ApiModel(description = "Informações da Paginacao" , value="Paginacao")
+
 public class PaginacaoDTO<T> {
 	
 	

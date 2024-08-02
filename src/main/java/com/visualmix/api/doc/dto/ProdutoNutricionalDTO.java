@@ -379,7 +379,7 @@ public class  ProdutoNutricionalDTO {
 	@ApiModelProperty(value = "Decimal Medida Caseira:\r\n"
 			+ "Parte decimal da medida caseira referente a porção, podendo assumir os valores:\r\n"
 			+ "00 - 0\r\n"
-			+ "01 - 1/4\\r\\n"
+			+ "01 - 1/4\r\n"
 			+ "02 - 1/3\r\n"
 			+ "03 - 1/2\r\n"
 			+ "04 - 2/3\r\n"
