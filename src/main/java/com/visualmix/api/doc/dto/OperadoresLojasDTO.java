@@ -25,9 +25,6 @@ public class OperadoresLojasDTO {
 			+ "Código da loja na qual o operador tem acesso", example = " ")
 	private Integer loja;
 
-	@ApiModelProperty(value = "Código de Integração:\r\n"
-			+ "Código de integração do operador (caso alfanumérico)", example = " ")
-	private String codigoIntegracao;
 
 	@ApiModelProperty(value = "Tipo de Ação:\r\n"
 			+ "Indica qual a ação a integração irá executar.\r\n"

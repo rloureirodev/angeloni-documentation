@@ -139,9 +139,7 @@ public class LojasDTO {
 			+ "1 - Sim", example = "0")
 	private Byte usaNfce;
 
-	@ApiModelProperty(value = "Código Integração:\r\n"
-			+ "Código da loja na retaguarda", example = " ")
-	private String codigoIntegracao;
+
 
 	@ApiModelProperty(value = "CAE:\r\n"
 			+ "Campo desativado, enviar zero", example = "0")

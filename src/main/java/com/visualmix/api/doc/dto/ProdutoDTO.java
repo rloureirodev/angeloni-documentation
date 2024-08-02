@@ -86,9 +86,7 @@ public class ProdutoDTO {
 			+ "E - Excluído: Produto fora de linha ou que não é mais comprado pela empresa e não tem mais quantidade em estoque", example = "Ativo")
 	private String situacao;
 	
-	@ApiModelProperty(value = "Código Integração:\r\n"
-			+ "Código Interno do produto na retaguarda", example = "ABC123")
-	private String codigoIntegracao;
+
 	
 	@ApiModelProperty(value = "Produto Complementar:\r\n"
 			+ "Código Interno do produto com venda associada", example = "54321")

@@ -21,7 +21,5 @@ public class KitLojasDTO {
 			+ "Loja que poderá vender o Kit.", example = " ")
 	private Integer loja;
 
-	@ApiModelProperty(value = "Loja Capa:\r\n"
-			+ "Número da Loja de cadastro do kit", example = " ")
-	private Integer lojaCapa;
+
 }

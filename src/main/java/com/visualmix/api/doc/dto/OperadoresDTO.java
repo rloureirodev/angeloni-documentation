@@ -54,9 +54,7 @@ public class OperadoresDTO {
 			+ "Percentual de comissão para os vendedores", example = " ")
 	private double comissao;
 
-	@ApiModelProperty(value = "Código de Integração:\r\n"
-			+ "Código de integração do operador (caso alfanumérico)", example = " ")
-	private String codigoIntegracao;
+
 
 	@ApiModelProperty(value = "Loja:\r\n"
 			+ "Número da loja.", example = " ")

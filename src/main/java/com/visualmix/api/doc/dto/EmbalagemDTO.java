@@ -79,7 +79,8 @@ public class EmbalagemDTO {
 			+ "0 – Não\r\n"
 			+ "1 – Sim ", example = "1")
 	private int cestaBasica;
-
+	
+	@JsonIgnore
 	@ApiModelProperty(value = "Tara Mínima da Embalagem:\r\n"
 			+ "Tara Mínima Embalagem para desconto no PDV ", example = "0.01")
 	private double taraMinima;

@@ -54,7 +54,7 @@ public class EmbalagemLojaDTO {
 			+ "Preço de venda que será praticado para o produto na loja.", example = "0.01")
 	private double precoVenda;
 
-	@ApiModelProperty(value = " [ VERIFICAR ] ", example = " ")
+	@ApiModelProperty(value = "Custo Ultima entrada sem ICMS", example = " ")
 	private double custoUltimaEntradaSemIcms;
 
 	@ApiModelProperty(value = "Data Início da Promoção:\r\n"
@@ -118,7 +118,7 @@ public class EmbalagemLojaDTO {
 			+ "Preço de montagem para o produto", example = " ")
 	private double precoMontagem;	
 
-	@ApiModelProperty(value = " [ VERIFICAR ] ", example = "Texto")
+	@ApiModelProperty(value = "Descrição mais completa", example = "Texto")
 	private String descricaoAux;	
 	
 	@ApiModelProperty(value = " ", example = " ")

@@ -24,13 +24,13 @@ import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
-@Api(tags = "Lojas", description = "Consulta de Lojas.")
+@Api(tags = "Kits", description = "Consulta de Kits.")
 @RequestMapping("/cadastro")
 @RestController
 public class KitsController {
 
-	@ApiOperation(value = "Obter Lojas", notes = "Retorna todos as Lojas")
-	@GetMapping("/lojas")
+	@ApiOperation(value = "Obter Kits", notes = "Retorna todos os Kits")
+	@GetMapping("/kits")
 	public PaginacaoDTO<KitCapaDTO> get(
 			HttpServletRequest request, 
 			@ApiParam(value = "ID do usuário", required = true) 

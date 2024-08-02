@@ -14,10 +14,6 @@ public class FabricantesDTO {
 			+ "Código do fabricante.", example = "1")
 	private Integer codigo;
 
-	@ApiModelProperty(value = "Código de Integração:\r\n"
-			+ "Código do fabricante na retaguarda.", example = "Texto")
-	private String codigoIntegracao;
-
 	@ApiModelProperty(value = "Razão Social:\r\n"
 			+ "Nome da empresa do fornecedor.", example = "Razão Social")
 	private String razaoSocial;
