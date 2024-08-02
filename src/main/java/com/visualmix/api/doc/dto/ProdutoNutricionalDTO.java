@@ -23,254 +23,284 @@ public class  ProdutoNutricionalDTO {
 			+ "Ex.: 30g (3 unidades)", example = "30g (3 unidades)")
 	private String descPorcao;
 
-	@ApiModelProperty(value = "Tipo da Informação nutricional, podendo assumir os valores:\r\n"
+	@ApiModelProperty(value = "Tipo da Informação nutricional - Valor Energético:\r\n"
 			+ "0 - Normal\r\n"
 			+ "1 – Menor que\r\n"
 			+ "2 – Quantidade não significativa\r\n"
-			+ "3 – Não Disponível\n"
-			+ "Obs.: Onde 01 - Valor Energético", example = " ")
+			+ "3 – Não Disponível\n", example = " ")
 	private int tipo01;
 
 	@ApiModelProperty(value = "Onde 01 - Valor Energético", example = " ")
 	private Float qtde01;
 
-	@ApiModelProperty(value = "Tipo da Quantidade, podendo assumir os valores:\r\n"
+	@ApiModelProperty(value = "Tipo da Quantidade - Valor Energético\r\n"
 			+ "0 – gr\r\n"
 			+ "1 – mg\r\n"
 			+ "2 – kg\r\n"
 			+ "3 – ml\r\n"
 			+ "4 – lt\r\n"
-			+ "5 - kcal\r\n"
-			+ "Obs.: Onde 01 - Valor Energético", example = " ")
+			+ "5 - kcal\r\n", example = " ")
 	private int tipoQtde01;
 
 	@ApiModelProperty(value = "Valor em porcentagem referente ao valor diário de nutrientes\r\n"
 			+ "Obs.: Onde 01 - Valor Energético", example = " ")
 	private Float vd01;
 
-	@ApiModelProperty(value = "Tipo da Informação nutricional, podendo assumir os valores:\r\n"
+	@ApiModelProperty(value = "Tipo da Informação nutricional - Carboidratos\r\n"
 			+ "0 - Normal\r\n"
 			+ "1 – Menor que\r\n"
 			+ "2 – Quantidade não significativa\r\n"
 			+ "3 – Não Disponível\n"
-			+ "Obs.: Onde 02 - Carboidratos", example = " ")
+			, example = " ")
 	private int tipo02;
 
 	@ApiModelProperty(value = "Onde 02 - Carboidratos", example = " ")
 	private Float qtde02;
 
-	@ApiModelProperty(value = "Tipo da Quantidade, podendo assumir os valores:\r\n"
+	@ApiModelProperty(value = "Tipo da Quantidade - Carboidratos\r\n"
 			+ "0 – gr\r\n"
 			+ "1 – mg\r\n"
 			+ "2 – kg\r\n"
 			+ "3 – ml\r\n"
 			+ "4 – lt\r\n"
-			+ "5 - kcal\r\n"
-			+ "Obs.: Onde 02 - Carboidratos", example = " ")
+			+ "5 - kcal\r\n", example = " ")
 	private int tipoQtde02;
 
 	@ApiModelProperty(value = "Valor em porcentagem referente ao valor diário de nutrientes\r\n"
 			+ "Obs.: Onde 02 - Carboidratos", example = " ")
 	private Float vd02;
 
-	@ApiModelProperty(value = "Tipo da Informação nutricional, podendo assumir os valores:\r\n"
+	@ApiModelProperty(value = "Tipo da Informação nutricional - Proteínas\r\n"
 			+ "0 - Normal\r\n"
 			+ "1 – Menor que\r\n"
 			+ "2 – Quantidade não significativa\r\n"
-			+ "3 – Não Disponível\n"
-			+ "Obs.: Onde 03 - Proteínas", example = " ")
+			+ "3 – Não Disponível\n", example = " ")
 	private int tipo03;
 
 	@ApiModelProperty(value = "Onde 03 - Proteínas", example = " ")
 	private Float qtde03;
 
-	@ApiModelProperty(value = "Tipo da Quantidade, podendo assumir os valores:\r\n"
+	@ApiModelProperty(value = "Tipo da Quantidade - Proteínas\r\n"
 			+ "0 – gr\r\n"
 			+ "1 – mg\r\n"
 			+ "2 – kg\r\n"
 			+ "3 – ml\r\n"
 			+ "4 – lt\r\n"
-			+ "5 - kcal\r\n"
-			+ "Obs.: Onde 03 - Proteínas", example = " ")
+			+ "5 - kcal\r\n", example = " ")
 	private int tipoQtde03;
 
 	@ApiModelProperty(value = "Valor em porcentagem referente ao valor diário de nutrientes\r\n"
 			+ "Obs.: Onde 03 - Proteínas", example = " ")
 	private Float vd03;
 
-	@ApiModelProperty(value = "Tipo da Informação nutricional, podendo assumir os valores:\r\n"
+	@ApiModelProperty(value = "Tipo da Informação nutricional - Gorduras Totais\r\n"
 			+ "0 - Normal\r\n"
 			+ "1 – Menor que\r\n"
 			+ "2 – Quantidade não significativa\r\n"
-			+ "3 – Não Disponível\n"
-			+ "Obs.: Onde 04 - Gorduras Totais", example = " ")
+			+ "3 – Não Disponível\n", example = " ")
 	private int tipo04;
 
 	@ApiModelProperty(value = "Onde 04 - Gorduras Totais", example = " ")
 	private Float qtde04;
 
-	@ApiModelProperty(value = "Tipo da Quantidade, podendo assumir os valores:\r\n"
+	@ApiModelProperty(value = "Tipo da Quantidade - Gorduras Totais\r\n"
 			+ "0 – gr\r\n"
 			+ "1 – mg\r\n"
 			+ "2 – kg\r\n"
 			+ "3 – ml\r\n"
 			+ "4 – lt\r\n"
-			+ "5 - kcal\r\n"
-			+ "Obs.: Onde 04 - Gorduras Totais", example = " ")
+			+ "5 - kcal\r\n", example = " ")
 	private int tipoQtde04;
 
 	@ApiModelProperty(value = "Valor em porcentagem referente ao valor diário de nutrientes\r\n"
 			+ "Obs.: Onde 04 - Gorduras Totais", example = " ")
 	private Float vd04;
 
-	@ApiModelProperty(value = "Tipo da Informação nutricional, podendo assumir os valores:\r\n"
+	@ApiModelProperty(value = "Tipo da Informação nutricional - Gorduras /Saturadas\r\n"
 			+ "0 - Normal\r\n"
 			+ "1 – Menor que\r\n"
 			+ "2 – Quantidade não significativa\r\n"
-			+ "3 – Não Disponível\n"
-			+ "Obs.: Onde 05 - Gorduras /Saturadas", example = " ")
+			+ "3 – Não Disponível\n", example = " ")
 	private int tipo05;
 
 	@ApiModelProperty(value = "Onde 05 - Gorduras /Saturadas", example = " ")
 	private Float qtde05;
 
-	@ApiModelProperty(value = "Tipo da Quantidade, podendo assumir os valores:\r\n"
+	@ApiModelProperty(value = "Tipo da Quantidade - Gorduras /Saturadas\r\n"
 			+ "0 – gr\r\n"
 			+ "1 – mg\r\n"
 			+ "2 – kg\r\n"
 			+ "3 – ml\r\n"
 			+ "4 – lt\r\n"
-			+ "5 - kcal\r\n"
-			+ "Obs.: Onde 05 - Gorduras /Saturadas", example = " ")
+			+ "5 - kcal\r\n", example = " ")
 	private int tipoQtde05;
 
 	@ApiModelProperty(value = "Valor em porcentagem referente ao valor diário de nutrientes\r\n"
 			+ "Obs.: Onde 05 - Gorduras /Saturadas", example = " ")
 	private Float vd05;
 
-	@ApiModelProperty(value = "Tipo da Informação nutricional, podendo assumir os valores:\r\n"
+	@ApiModelProperty(value = "Tipo da Informação nutricional - Gorduras Trans\r\n"
 			+ "0 - Normal\r\n"
 			+ "1 – Menor que\r\n"
 			+ "2 – Quantidade não significativa\r\n"
-			+ "3 – Não Disponível\n"
-			+ "Obs.: Onde 06 - Gorduras Trans", example = " ")
+			+ "3 – Não Disponível\n", example = " ")
 	private int tipo06;
 
 	@ApiModelProperty(value = "Onde 06 - Gorduras Trans", example = " ")
 	private Float qtde06;
 
-	@ApiModelProperty(value = "Tipo da Quantidade, podendo assumir os valores:\r\n"
+	@ApiModelProperty(value = "Tipo da Quantidade - Gorduras Trans\r\n"
 			+ "0 – gr\r\n"
 			+ "1 – mg\r\n"
 			+ "2 – kg\r\n"
 			+ "3 – ml\r\n"
 			+ "4 – lt\r\n"
-			+ "5 - kcal\r\n"
-			+ "Obs.: Onde 06 - Gorduras Trans", example = " ")
+			+ "5 - kcal\r\n", example = " ")
 	private int tipoQtde06;
 
 	@ApiModelProperty(value = "Valor em porcentagem referente ao valor diário de nutrientes\r\n"
 			+ "Obs.: Onde 06 - Gorduras Trans", example = " ")
 	private Float vd06;
 
-	@ApiModelProperty(value = "Tipo da Informação nutricional, podendo assumir os valores:\r\n"
+	@ApiModelProperty(value = "Tipo da Informação nutricional - Fibra Alimentar\r\n"
 			+ "0 - Normal\r\n"
 			+ "1 – Menor que\r\n"
 			+ "2 – Quantidade não significativa\r\n"
-			+ "3 – Não Disponível\n"
-			+ "Obs.: Onde 07 - Fibra Alimentar", example = " ")
+			+ "3 – Não Disponível\n", example = " ")
 	private int tipo07;
 
 	@ApiModelProperty(value = "Onde 07 - Fibra Alimentar", example = " ")
 	private Float qtde07;
 
-	@ApiModelProperty(value = "Tipo da Quantidade, podendo assumir os valores:\r\n"
+	@ApiModelProperty(value = "Tipo da Quantidade - Fibra Alimentar\r\n"
 			+ "0 – gr\r\n"
 			+ "1 – mg\r\n"
 			+ "2 – kg\r\n"
 			+ "3 – ml\r\n"
 			+ "4 – lt\r\n"
-			+ "5 - kcal\r\n"
-			+ "Obs.: Onde 07 - Fibra Alimentar", example = " ")
+			+ "5 - kcal\r\n", example = " ")
 	private int tipoQtde07;
 
 	@ApiModelProperty(value = "Valor em porcentagem referente ao valor diário de nutrientes\r\n"
 			+ "Obs.: Onde 07 - Fibra Alimentar", example = " ")
 	private Float vd07;
 
-	@ApiModelProperty(value = "Tipo da Informação nutricional, podendo assumir os valores:\r\n"
+	@ApiModelProperty(value = "Tipo da Informação nutricional - Sódio\r\n"
 			+ "0 - Normal\r\n"
 			+ "1 – Menor que\r\n"
 			+ "2 – Quantidade não significativa\r\n"
-			+ "3 – Não Disponível\n"
-			+ "Obs.: Onde 08 - Sódio", example = " ")
+			+ "3 – Não Disponível\n", example = " ")
 	private int tipo08;
 
 	@ApiModelProperty(value = "Onde 08 - Sódio", example = " ")
 	private Float qtde08;
 
-	@ApiModelProperty(value = "Tipo da Quantidade, podendo assumir os valores:\r\n"
+	@ApiModelProperty(value = "Tipo da Quantidade - Sódio\r\n"
 			+ "0 – gr\r\n"
 			+ "1 – mg\r\n"
 			+ "2 – kg\r\n"
 			+ "3 – ml\r\n"
 			+ "4 – lt\r\n"
-			+ "5 - kcal\r\n"
-			+ "Obs.: Onde 08 - Sódio", example = " ")
+			+ "5 - kcal\r\n", example = " ")
 	private int tipoQtde08;
 
 	@ApiModelProperty(value = "Valor em porcentagem referente ao valor diário de nutrientes\r\n"
 			+ "Obs.: Onde 08 - Sódio", example = " ")
 	private Float vd08;
-	
-	@ApiModelProperty(value = " ", example = " ")
+	///////////////////////////////////
+	@ApiModelProperty(value = "Tipo da Informação nutricional - Açucares Totais\r\n"
+			+ "0 - Normal\r\n"
+			+ "1 – Menor que\r\n"
+			+ "2 – Quantidade não significativa\r\n"
+			+ "3 – Não Disponível\n", example = " ")
 	private int tipo09;
 
-	@ApiModelProperty(value = " ", example = " ")
+	@ApiModelProperty(value = "Onde 09 - Açucares Totais", example = " ")
 	private Float qtde09;
 
-	@ApiModelProperty(value = " ", example = " ")
+	@ApiModelProperty(value = "Tipo da Quantidade - Açucares Totais\r\n"
+			+ "0 – gr\r\n"
+			+ "1 – mg\r\n"
+			+ "2 – kg\r\n"
+			+ "3 – ml\r\n"
+			+ "4 – lt\r\n"
+			+ "5 - kcal\r\n", example = " ")
 	private int tipoQtde09;
 
-	@ApiModelProperty(value = " ", example = " ")
+	@ApiModelProperty(value = "Valor em porcentagem referente ao valor diário de nutrientes\r\n"
+			+ "Obs.: Onde 09 - Açucares Totais", example = " ")
 	private Float vd09;
-
-	@ApiModelProperty(value = "", example = " ")
+////////////////////////////////////////////////////
+	@ApiModelProperty(value = "Tipo da Informação nutricional - Açucares Adicionados\r\n"
+			+ "0 - Normal\r\n"
+			+ "1 – Menor que\r\n"
+			+ "2 – Quantidade não significativa\r\n"
+			+ "3 – Não Disponível\n", example = " ")
 	private int tipo10;
 
-	@ApiModelProperty(value = " ", example = " ")
+	@ApiModelProperty(value = "Onde 10 - Açucares Adicionados", example = " ")
 	private Float qtde10;
 
-	@ApiModelProperty(value = " ", example = " ")
+	@ApiModelProperty(value = "Tipo da Quantidade - Açucares Adicionados\r\n"
+			+ "0 – gr\r\n"
+			+ "1 – mg\r\n"
+			+ "2 – kg\r\n"
+			+ "3 – ml\r\n"
+			+ "4 – lt\r\n"
+			+ "5 - kcal\r\n", example = " ")
 	private int tipoQtde10;
 
-	@ApiModelProperty(value = " ", example = " ")
+	@ApiModelProperty(value = "Valor em porcentagem referente ao valor diário de nutrientes\r\n"
+			+ "Obs.: Onde 10 - Açucares Adicionados", example = " ")
 	private Float vd10;
-
-	@ApiModelProperty(value = "", example = " ")
+//////////######################################
+	@ApiModelProperty(value = "Tipo da Informação nutricional - Lactose\r\n"
+			+ "0 - Normal\r\n"
+			+ "1 – Menor que\r\n"
+			+ "2 – Quantidade não significativa\r\n"
+			+ "3 – Não Disponível\n", example = " ")
 	private int tipo11;
 
-	@ApiModelProperty(value = " ", example = " ")
+	@ApiModelProperty(value = "Onde 11 - Lactose", example = " ")
 	private Float qtde11;
 
-	@ApiModelProperty(value = " ", example = " ")
+	@ApiModelProperty(value = "Tipo da Quantidade - Lactose\r\n"
+			+ "0 – gr\r\n"
+			+ "1 – mg\r\n"
+			+ "2 – kg\r\n"
+			+ "3 – ml\r\n"
+			+ "4 – lt\r\n"
+			+ "5 - kcal\r\n", example = " ")
 	private int tipoQtde11;
 
-	@ApiModelProperty(value = " ", example = " ")
+	@ApiModelProperty(value = "Valor em porcentagem referente ao valor diário de nutrientes\r\n"
+			+ "Obs.: Onde 11 - Lactose", example = " ")
 	private Float vd11;
+//////////######################################
 
-	@ApiModelProperty(value = "", example = " ")
+	@ApiModelProperty(value = "Tipo da Informação nutricional - Galactose\r\n"
+			+ "0 - Normal\r\n"
+			+ "1 – Menor que\r\n"
+			+ "2 – Quantidade não significativa\r\n"
+			+ "3 – Não Disponível\n", example = " ")
 	private int tipo12;
 
-	@ApiModelProperty(value = " ", example = " ")
+	@ApiModelProperty(value = "Onde 11 - Galactose", example = " ")
 	private Float qtde12;
 
-	@ApiModelProperty(value = " ", example = " ")
+	@ApiModelProperty(value = "Tipo da Quantidade - Galactose\r\n"
+			+ "0 – gr\r\n"
+			+ "1 – mg\r\n"
+			+ "2 – kg\r\n"
+			+ "3 – ml\r\n"
+			+ "4 – lt\r\n"
+			+ "5 - kcal\r\n", example = " ")
 	private int tipoQtde12;
 
-	@ApiModelProperty(value = " ", example = " ")
+	@ApiModelProperty(value = "Valor em porcentagem referente ao valor diário de nutrientes\r\n"
+			+ "Obs.: Onde 11 - Galactose", example = " ")
 	private Float vd12;
-
+//////////######################################
 	@ApiModelProperty(value = "Receita 1:\r\n"
 			+ "Descrição da receita", example = " ")
 	private String linha01;

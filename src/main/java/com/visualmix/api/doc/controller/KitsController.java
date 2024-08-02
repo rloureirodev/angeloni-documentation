@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.visualmix.api.doc.dto.EmbalagemLojaDTO;
 import com.visualmix.api.doc.dto.FabricantesDTO;
 import com.visualmix.api.doc.dto.FornecedoresGetResponse;
+import com.visualmix.api.doc.dto.KitCapaDTO;
 import com.visualmix.api.doc.dto.LojasDTO;
 import com.visualmix.api.doc.dto.MercadologicosDTO;
 import com.visualmix.api.doc.dto.PaginacaoDTO;
@@ -30,13 +31,14 @@ public class KitsController {
 
 	@ApiOperation(value = "Obter Lojas", notes = "Retorna todos as Lojas")
 	@GetMapping("/lojas")
-	public PaginacaoDTO<LojasDTO> get(
+	public PaginacaoDTO<KitCapaDTO> get(
 			HttpServletRequest request, 
-			@ApiParam(value = "ID do usuário", required = true) @RequestParam(value = "pagina", required = false) Integer pagina, 
+			@ApiParam(value = "ID do usuário", required = true) 
+			@RequestParam(value = "pagina", required = true) Integer pagina, 
 			@RequestParam(value = "registrosPagina", required = false) Integer registrosPagina, 
 			@RequestParam(value = "dataAlteracao", required = false) LocalDateTime dataAlteracao) {
 			
-		return new PaginacaoDTO<LojasDTO>();
+		return new PaginacaoDTO<KitCapaDTO>();
 	}
 	
 }

@@ -31,7 +31,8 @@ public class MercadologicosController {
 	@GetMapping("/mercadologicos")
 	public PaginacaoDTO<MercadologicosDTO> get(
 			HttpServletRequest request, 
-			@ApiParam(value = "ID do usuário", required = true) @RequestParam(value = "pagina", required = false) Integer pagina, 
+			@ApiParam(value = "ID do usuário", required = true) 
+			@RequestParam(value = "pagina", required = true) Integer pagina, 
 			@RequestParam(value = "registrosPagina", required = false) Integer registrosPagina, 
 			@RequestParam(value = "dataAlteracao", required = false) LocalDateTime dataAlteracao) {
 			

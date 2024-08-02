@@ -31,8 +31,10 @@ public class PackVirtualController {
 	@GetMapping("/packvirtual")
 	public PaginacaoDTO<PackVirtualDTO> get(
 			HttpServletRequest request, 
-			@ApiParam(value = "ID do usuário", required = true) @RequestParam(value = "pagina", required = false) Integer pagina, 
-			@RequestParam(value = "registrosPagina", required = false) Integer registrosPagina, 
+			@ApiParam(value = "ID do usuário", required = true) 
+			@RequestParam(value = "pagina", required = true) Integer pagina, 
+			@RequestParam(value = "registrosPagina", required = false) Integer registrosPagina,
+			@RequestParam(value = "loja", required = true) Integer loja,
 			@RequestParam(value = "dataAlteracao", required = false) LocalDateTime dataAlteracao) {
 			
 		return new PaginacaoDTO<PackVirtualDTO>();

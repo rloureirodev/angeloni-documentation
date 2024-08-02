@@ -31,13 +31,14 @@ public class LojasController {
 
 	@ApiOperation(value = "Obter Kits", notes = "Retorna todos os Kits")
 	@GetMapping("/kits")
-	public PaginacaoDTO<KitCapaDTO> get(
+	public PaginacaoDTO<LojasDTO> get(
 			HttpServletRequest request, 
-			@ApiParam(value = "ID do usuário", required = true) @RequestParam(value = "pagina", required = false) Integer pagina, 
+			@ApiParam(value = "ID do usuário", required = true) 
+			@RequestParam(value = "pagina", required = true) Integer pagina, 
 			@RequestParam(value = "registrosPagina", required = false) Integer registrosPagina, 
 			@RequestParam(value = "dataAlteracao", required = false) LocalDateTime dataAlteracao) {
 			
-		return new PaginacaoDTO<KitCapaDTO>();
+		return new PaginacaoDTO<LojasDTO>();
 	}
 	
 }
